@@ -3,12 +3,12 @@ import { updateVariant } from "./variants.js"
 
 const bookmarks = [
   {
-    label: "reddit",
+    label: "shit",
     items: {
-      "r/startpages": "https://www.reddit.com/r/startpages",
-      "r/unixporn": "https://www.reddit.com/r/unixporn",
-      "r/webdev": "https://www.reddit.com/r/webdev",
-      "r/coolgithubprojects ": "https://www.reddit.com/r/coolgithubprojects ",
+      "devforum": "https://devforum.roblox.com/t/what-are-you-working-on-currently-2024/2787544",
+      "brainrot": "https://www.youtube.com",
+      "steam": "https://store.steampowered.com",
+      "weather": "https://www.ventusky.com/?p=39.1;-103.9;5&l=feel&t=20250110/0300",
     },
   },
   {
@@ -28,7 +28,7 @@ const bookmarks = [
     },
   },
   {
-    label: "ressources",
+    label: "resources",
     items: {
       "react > bulletproof": "https://github.com/alan2207/bulletproof-react",
       "js > patterns": "https://www.patterns.dev/#patterns",
