@@ -11,7 +11,7 @@
     "lint:fix": "npm run lint -- --fix"
   },
   "devDependencies": {
-    "@pretty-cozy/eslint-config": "0.9.0-alpha.3",
+    "@pretty-cozy/eslint-config": "0.9.0-alpha.5",
     "vite": "7.3.1"
   }
 }
