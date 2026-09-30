@@ -3,7 +3,7 @@ const createLink = (text, url) => {
 
   link.innerText = text
   link.href = url
-  link.setAttribute("data-text", text)
+  link.dataset.text = text
   return link
 }
 
@@ -23,9 +23,9 @@ export function injectBookmarks(bookmarks) {
     Object.entries(items).forEach(([name, url]) => {
       const item = document.createElement("li")
       const link = createLink(name, url)
-      item.appendChild(link)
-      list.appendChild(item)
+      item.append(link)
+      list.append(item)
     })
-    nav.appendChild(list)
+    nav.append(list)
   })
 }

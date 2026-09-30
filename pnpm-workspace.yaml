@@ -3,11 +3,13 @@ preferFrozenLockfile: true
 savePrefix: ""
 
 minimumReleaseAge: 4320 # >=3 days
+minimumReleaseAgeExclude:
+  - "@pretty-cozy/oxlint-config@0.2.2"
 
 trustPolicy: no-downgrade
 trustPolicyExclude:
   - "semver@6.3.1" # https://github.com/npm/node-semver/issues/838
-  
+
 allowBuilds:
   esbuild: false
   unrs-resolver: false

@@ -7,6 +7,7 @@ A simple startpage, iterating over multiple images from the DanDaDan opening.
 ## How to use
 
 To use it yourself, fork the repo and set it up to automatically deploy the startpage:
+
 1. In your repo, open the `Settings` and in there the `Pages` page
 2. Click on the `Source` select and choose `Github Actions`
 3. Switch to the `Actions` tab, click on `Deploy to Pages` and then `Run workflow`
@@ -20,6 +21,7 @@ The easiest is to pick a `New tab override` browser extension in your browsers e
 ## Customizability
 
 Content can be adjusted in `src/scripts/index.js`:
+
 - Adjust bookmarks by updating the `bookmarks` variable
 - You can "pin" an image variant by passing its name in the `updateVariant` function
   - e.g.: `updateVariant("momo-1")`

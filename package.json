@@ -7,11 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint ./src",
-    "lint:fix": "pnpm run lint --fix"
+    "lint": "oxlint && oxfmt --check",
+    "lint:fix": "oxlint --fix && oxfmt --write"
   },
   "devDependencies": {
-    "@pretty-cozy/eslint-config": "0.10.0",
+    "@pretty-cozy/oxlint-config": "0.2.2",
+    "oxfmt": "0.70.0",
+    "oxlint": "1.85.0",
+    "oxlint-tsgolint": "7.0.2003",
     "vite": "8.3.1"
   }
 }

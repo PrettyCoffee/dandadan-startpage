@@ -97,12 +97,14 @@ function setPinned(variant) {
     localStorage.removeItem(pinStoreKey)
     pinAction.ariaChecked = "false"
     icon.style.fill = "transparent"
-    pinAction.title = label.innerText = "Pin variant"
+    pinAction.title = "Pin variant"
+    label.innerText = "Pin variant"
   } else {
     localStorage.setItem(pinStoreKey, variant)
     pinAction.ariaChecked = "true"
     icon.style.fill = "currentColor"
-    pinAction.title = label.innerText = "Unpin variant"
+    pinAction.title = "Unpin variant"
+    label.innerText = "Unpin variant"
   }
 }
 

@@ -1,6 +1,7 @@
 :root {
   background: var(--background)
-    linear-gradient(120deg,
+    linear-gradient(
+      120deg,
       rgba(from var(--primary) r g b / 75%) 0%,
       rgba(from var(--primary) r g b / 75%) 100%
     );
@@ -26,7 +27,7 @@ button#pin-action {
   }
 }
 
-body>main {
+body > main {
   padding: 1rem 2rem 1rem 1rem;
   backdrop-filter: blur(4px);
 
@@ -51,7 +52,7 @@ body>main {
     19.2px 15.4px 27.7px -2.5px var(--shadow-color);
 }
 
-main>img {
+main > img {
   grid-area: char-img;
   height: 13rem;
   width: 21rem;
@@ -64,7 +65,7 @@ main>img {
   outline-offset: 0.25rem;
 }
 
-main>h1 {
+main > h1 {
   grid-area: title;
   margin: 0;
   padding-bottom: 0.75rem;
@@ -80,13 +81,12 @@ main>h1 {
   filter: drop-shadow(0.125rem 0 var(--secondary));
 }
 
-main>nav {
+main > nav {
   grid-area: nav;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
   row-gap: 1rem;
-
 
   label {
     display: inline-block;
@@ -110,7 +110,9 @@ main>nav {
     outline: none;
     border-radius: 0.125rem;
 
-    &, &::before, &::after {
+    &,
+    &::before,
+    &::after {
       display: inline-block;
       max-width: 10rem;
       padding: 0 0.5rem;
@@ -119,7 +121,8 @@ main>nav {
       white-space: nowrap;
     }
 
-    &::before, &::after {
+    &::before,
+    &::after {
       content: attr(data-text);
       color: var(--text);
       position: absolute;
@@ -134,12 +137,12 @@ main>nav {
       clip-path: polygon(0% 55%, 100% 55%, 100% 100%, 0% 100%);
     }
 
-
     &:focus-visible {
       outline: var(--focus-ring);
     }
 
-    &:hover, &:focus-visible {
+    &:hover,
+    &:focus-visible {
       &::before {
         color: var(--secondary);
         transform: translateX(0.25rem) skewX(-15deg);
@@ -152,17 +155,17 @@ main>nav {
   }
 }
 
-main>form {
+main > form {
   grid-area: search;
   display: flex;
   gap: 1rem;
   position: relative;
 
-  &>input {
+  & > input {
     flex: 1;
     padding-right: 2.5rem;
   }
-  &>button {
+  & > button {
     position: absolute;
     right: 0;
   }
@@ -174,7 +177,7 @@ svg {
 }
 
 @media screen and (max-width: 56rem) {
-  body>main {
+  body > main {
     width: 100%;
     max-width: 24rem;
     padding: 1rem;
@@ -184,7 +187,7 @@ svg {
       "search"
       "nav";
 
-    >img {
+    > img {
       width: calc(100% - 1rem);
     }
     nav {
@@ -193,11 +196,15 @@ svg {
       align-items: stretch;
       justify-items: stretch;
       justify-content: stretch;
-      ul, li, a {
+      ul,
+      li,
+      a {
         overflow: hidden;
         text-overflow: ellipsis;
       }
-      a, a::before, a::after {
+      a,
+      a::before,
+      a::after {
         max-width: 100%;
       }
     }
@@ -205,8 +212,7 @@ svg {
 }
 
 @media screen and (max-width: 21rem) {
-  body>main>nav {
+  body > main > nav {
     grid-template-columns: 1fr;
   }
 }
-
