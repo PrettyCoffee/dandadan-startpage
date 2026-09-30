@@ -1,0 +1,13 @@
+blockExoticSubdeps: true
+preferFrozenLockfile: true
+savePrefix: ""
+
+minimumReleaseAge: 4320 # >=3 days
+
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - "semver@6.3.1" # https://github.com/npm/node-semver/issues/838
+  
+allowBuilds:
+  esbuild: false
+  unrs-resolver: false
